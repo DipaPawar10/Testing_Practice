@@ -1,0 +1,35 @@
+package DemoTest.Test1;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Set;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.safari.SafariDriver.WindowType;
+
+public class OpenNewTabOrWindow {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.setProperty("webdriver.chrome.driver", "C:\\\\Users\\\\Lenovo\\\\Downloads\\\\drivers\\\\chromedriver-win64\\\\chromedriver.exe");
+		WebDriver driver=new ChromeDriver();
+		driver.get("https://www.google.com/");
+		System.out.println("Page first: "+driver.getTitle());
+		
+//		driver.switchTo().window(WindowType.WINDOW);
+        driver.switchTo().newWindow(WindowType.TAB);
+		driver.get("https://www.facebook.in/");
+		System.out.println("Page second: "+driver.getTitle());
+		
+		//get window handles of open windows 
+		Set<String> windowhandles = driver.getWindowHandles();
+		List<String> handles = new ArrayList<String>();
+		handles.addAll(windowhandles);
+		driver.close();
+		
+		driver.switchTo().window(handles.get(0));
+		System.out.println("Page First:" +driver.getTitle());
+	}
+
+}

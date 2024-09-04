@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;DemoTest.Test1.FirstTestCase&apos; to &apos;BrockenLinksText&apos;&#x0D;&#x0A;- Original project: &apos;Test1&apos;&#x0D;&#x0A;- Original element: &apos;DemoTest.Test1.FirstTestCase&apos;&#x0D;&#x0A;- Renamed element: &apos;DemoTest.Test1.BrockenLinksText&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;FirstTestCase&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src\/test\/java=/test=/true=/=/optional=/true=/=/maven.pomderived=/true=/&lt;DemoTest.Test1{FirstTestCase.java[FirstTestCase" matchStrategy="1" name="BrockenLinksText" qualified="false" references="true" similarDeclarations="false" stamp="1720889909924" textual="false" version="1.0"/>
+</session>
